@@ -4,5 +4,5 @@
 1. 修改mysql.sh中的`UPDATE oc_module SET code=REPLACE(code,'http://xsser.me','http://localhost')`后面的域名替换为自己xss平台所使用的域名
 2. 修改config.php中的 urlroot 为自己的域名
 3. 修改authtest.php中的域名为自己的域名
-
+4. 如果你看到了xss目录下的readme.txt，请忽略
 备注：注册成功用户后，修改管理员表中的adminlevel为1时 可定义自身为最高管理员可发送邀请码（个人使用的话可以忽略）
