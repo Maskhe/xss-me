@@ -16,8 +16,10 @@
 `docker run -d -p 8888:80 -p 3333:3306 --name xss xss_me`
 
 但是现在我们还没有创建数据库等等，所以我写了个脚本，/app/mysq.sh，只要手动运行一下这个脚本，数据库就创建好了，一切都ok了
+
 然后我们就可以直接注册用户使用了
 
+![](https://github.com/Maskhe/xss-me/blob/master/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_1.png)
 
 
 备注：注册成功用户后，修改管理员表中的adminlevel为1时 可定义自身为最高管理员可发送邀请码（个人使用的话可以忽略）
