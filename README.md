@@ -6,4 +6,10 @@
 3. 修改authtest.php中的域名为自己的域名
 4. 如果你看到了xss目录下的readme.txt，请忽略
 
+
+做完上述准备工作后，就可以build镜像了(在存在dockerfile的目录下)
+`docker build -t xss_me .`
+然后运行一下
+`docker run -d -p 8888:80 -p 3333:3306 --name xss xss_me`
+
 备注：注册成功用户后，修改管理员表中的adminlevel为1时 可定义自身为最高管理员可发送邀请码（个人使用的话可以忽略）
